@@ -1,0 +1,261 @@
+<?xml version = "1.0"?>
+<GameData>
+<title>Greg Pittman</title>
+<maxStringSize>50</maxStringSize>
+
+<frameCapOn>true</frameCapOn>
+<period>17</period>
+
+<maxFrames>1000</maxFrames>
+<username>gapittm</username>
+
+<!-- Size Information -->
+<view>
+  <width>1280</width>
+  <height>720</height>
+</view>
+
+<world>
+  <width>4096</width>
+  <height>4096</height>
+</world>
+
+<!-- Level Files -->
+<tiles>
+  <level1>
+    <file>assets/level1.txt</file>
+    <size>16</size>
+  </level1>
+</tiles>
+
+<!-- Background -->
+<back>
+  <file>assets/space.png</file>
+  <factor>0</factor>
+  <transparency>false</transparency>
+</back>
+
+<!-- UI Elements -->
+<hud>
+  <file>assets/hud.png</file>
+  <transparency>false</transparency>
+  <startLoc x="16" y="16"/>
+  <padding>25</padding>
+  <pool>10</pool>
+  <shield>
+    <file>assets/hudshield.png</file>
+    <startLoc x="0" y="0"/>
+    <speedX>0</speedX>
+    <speedY>0</speedY>
+    <speedR>0</speedR>
+    <angle>0</angle>
+    <transparency>false</transparency>
+  </shield>
+  <health>
+    <file>assets/hudhealth.png</file>
+    <startLoc x="0" y="0"/>
+    <speedX>0</speedX>
+    <speedY>0</speedY>
+    <speedR>0</speedR>
+    <angle>0</angle>
+    <transparency>false</transparency>
+  </health>
+  <score>
+    <file>assets/hudscore.png</file>
+    <startLoc x="0" y="0"/>
+    <speedX>0</speedX>
+    <speedY>0</speedY>
+    <speedR>0</speedR>
+    <angle>0</angle>
+    <transparency>false</transparency>
+  </score>
+</hud>
+
+<defaultfont name="defaultfont">
+  <file>fonts/arial.ttf</file>
+  <size>24</size>
+  <red>100</red>
+  <green>255</green>
+  <blue>100</blue>
+  <alpha>0</alpha>
+</defaultfont>
+
+<weaponfont name="weaponfont">
+  <file>fonts/arial.ttf</file>
+  <size>18</size>
+  <red>100</red>
+  <green>255</green>
+  <blue>100</blue>
+  <alpha>0</alpha>
+</weaponfont>
+
+<!-- Tile Types -->
+<Wall>
+  <file>assets/tilewall.png</file>
+  <transparency>false</transparency>
+</Wall>
+
+<Basic>
+  <file>assets/tilebasic.png</file>
+  <transparency>false</transparency>
+</Basic>
+
+<Single>
+  <file>assets/tilebasicsingle.png</file>
+  <transparency>false</transparency>
+</Single>
+
+<WindowTopRight>
+  <file>assets/tilewindowtopright.png</file>
+  <transparency>false</transparency>
+</WindowTopRight>
+
+<WindowTopLeft>
+  <file>assets/tilewindowtopleft.png</file>
+  <transparency>false</transparency>
+</WindowTopLeft>
+
+<WindowBottomRight>
+  <file>assets/tilewindowbottomright.png</file>
+  <transparency>false</transparency>
+</WindowBottomRight>
+
+<WindowBottomLeft>
+  <file>assets/tilewindowbottomleft.png</file>
+  <transparency>false</transparency>
+</WindowBottomLeft>
+
+<PlayerSpawner>
+  <file>assets/tileplayer.png</file>
+  <transparency>false</transparency>
+  <frames>4</frames>
+  <frameInterval>600</frameInterval>
+</PlayerSpawner>
+
+<EnemySpawner>
+  <file>assets/tileenemy.png</file>
+  <transparency>false</transparency>
+  <frames>4</frames>
+  <frameInterval>600</frameInterval>
+  <spawnInterval>6000</spawnInterval>
+  <spawnFactor>1</spawnFactor>
+  <typeChance>10</typeChance>
+  <maxEnemies>20</maxEnemies>
+</EnemySpawner>
+
+<TurretBase>
+  <file>assets/tileturret.png</file>
+  <transparency>false</transparency>
+</TurretBase>
+  
+<!-- Player Components -->
+<PlayerDroneFrame>
+  <file>assets/droneframe.png</file>
+  <startLoc x="0" y="0"/>
+  <acceleration x="60" y="60"/>
+  <blades>2</blades>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <speedR>0</speedR>
+  <speedW>7.5</speedW>
+  <speed>200</speed>
+  <angle>0</angle>
+  <bullets>50</bullets>
+  <transparency>false</transparency>
+</PlayerDroneFrame>
+
+<PlayerDroneBlade>
+  <file>assets/droneblade.png</file>
+  <startLoc x="0" y="0"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <speedR>7.5</speedR>
+  <angle>0</angle>
+  <transparency>false</transparency>
+</PlayerDroneBlade>
+
+<PlayerDroneWeapon>
+  <file>assets/droneweapon.png</file>
+  <startLoc x="0" y="0"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <speedR>0</speedR>
+  <angle>0</angle>
+  <transparency>false</transparency>
+</PlayerDroneWeapon>
+
+<!-- Bullets and Weapon Types-->
+<BasicBullet>
+  <file>assets/bulletbasic.png</file>
+  <startLoc x="0" y="0"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <speedR>0</speedR>
+  <angle>0</angle>
+  <transparency>false</transparency>
+  <chunk>
+    <size>8</size>
+    <distance>100</distance>
+  </chunk>
+</BasicBullet>
+
+<Cannon>
+  <speed>600</speed>
+  <inaccuracy>10</inaccuracy>
+  <firerate>400</firerate>
+  <damage>5</damage>
+  <count>1</count>
+</Cannon>
+
+<Shotgun>
+  <speed>500</speed>
+  <inaccuracy>35</inaccuracy>
+  <firerate>900</firerate>
+  <damage>4</damage>
+  <count>5</count>
+</Shotgun>
+
+<Sniper>
+  <speed>1200</speed>
+  <inaccuracy>2</inaccuracy>
+  <firerate>1200</firerate>
+  <damage>10</damage>
+  <count>1</count>
+</Sniper>
+
+<!-- Hostile Entities -->
+<Bomber>
+  <file>assets/enemybomb.png</file>
+  <startLoc x="0" y="0"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <speedR>5</speedR>
+  <speed>150</speed>
+  <angle>0</angle>
+  <sightRange>1600</sightRange>
+  <chaseFactor>1.5</chaseFactor>
+  <health>10</health>
+  <damage>2</damage>
+  <transparency>false</transparency>
+  <chunk>
+    <size>16</size>
+    <distance>50</distance>
+  </chunk>
+</Bomber>
+
+<Turret>
+  <file>assets/enemyturret.png</file>
+  <startLoc x="0" y="0"/>
+  <speedX>0</speedX>
+  <speedY>0</speedY>
+  <speedR>0</speedR>
+  <angle>0</angle>
+  <range>400</range>
+  <speed>300</speed>
+  <inaccuracy>30</inaccuracy>
+  <damage>1</damage>
+  <fireRate>1000</fireRate>
+  <transparency>false</transparency>
+</Turret>
+
+</GameData>
